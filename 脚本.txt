@@ -1,0 +1,9 @@
+shell
+1、脚本变量赋值时候，=号后面不能有空格，不然会把=号后面的变量当成命令来执行；
+2、if后面的[]，其中的逻辑表达式前后需要空格，不然又语法错误，例如：
+    error：
+    if [ $platform_features_modified_date -gt $combination_features_modified_date -o $product_features_modified_date -gt $combination_features_modified_date]; then
+    correct：
+    if [ $platform_features_modified_date -gt $combination_features_modified_date -o $product_features_modified_date -gt $combination_features_modified_date ]; then
+3、需要执行一个命令，并将命令的结果赋值给某个变量时，需要将后面的这段命令括起来``(这是~下面的这个符号)。例如：获取文件修改时间：
+    a=`stat -c %Y filename`

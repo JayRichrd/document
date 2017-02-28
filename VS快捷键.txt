@@ -1,0 +1,10 @@
+添加注释：
+    先Ctrl + K，然后Ctrl + C
+取消注释：
+    先Ctrl + K，然后Ctrl + U
+
+格式化代码：
+    先Ctrl + K，然后Ctrl + F
+    
+删除当前行：
+    Ctrl + Shift + L

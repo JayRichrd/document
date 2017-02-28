@@ -1,0 +1,115 @@
+在linux中文件夹的层次关系使用的是斜杠'\',而在Windows下使用的是反斜杠'/'
+
+pwd
+    查看当前所在目录完整路径 
+
+mv
+    移走目录或者改文件名
+    
+mkdir
+    建立目录
+    
+cp
+    拷贝文件
+    
+su
+    在不退出登陆的情况下，切换到另外一个人的身份 
+    
+grep
+    文本内容搜索
+    
+cat
+    查看文件内容
+    
+rm -rf 
+    删除文件夹
+        //将会删除/var/log/httpd/access目录以及其下所有文件、文件夹
+        rm -rf /var/log/httpd/access
+查看文件夹的大小（查看每个根路径的分区大小）
+    du -h --max-depth=1
+    
+df -hl 
+    查看磁盘剩余空间
+    
+grep查找文件指令：
+    参数：
+        -I ：忽略大小写
+        -c ：打印匹配的行数
+        -h：查询多文件时不显示文件名
+        -l：从多个文件中查找包含匹配项
+        -v：查找不包含匹配项的行
+        -n：打印包含匹配项的行和行标
+        -r：搜索某个特定的字符串，而不确定这个字符串可能会在哪个文件中出现
+        -s：帮助我们将因为文件不存在或者文件不可读而打印出来的错误信息统统去除掉
+            例如：
+            grep -nrs "system/vendor/overlay"
+            //查找首先包含了jiangyu的内容，然后再这这个基础上过滤出包含ResourceTypes.cpp的内容
+            grep -nrs "jiangyu" | grep "ResourceTypes.cpp"
+            
+strings  libregionalization.so  | grep overlay
+    在这个.so文件中查找overlay字符串
+    
+ls -l:
+    列出7个字段的文件信息：
+        第1字段: 文件属性字段
+        第2字段：文件硬链接数（链接占用的节点）
+        第3字段：文件（目录）拥有者
+        第4字段：文件（目录）拥有者所在的组
+        第5字段: 文件所占用的空间(以字节为单位)
+        第6字段：文件（目录）最近访问（修改）时间
+        第7字段：文件名（如果是一个符号链接，那么会有一个 “->" 箭头符号，后面根一个它指向的文件名）
+        
+关于在服务器克隆代码的操作，在bin目录下repo.yl脚本，注意这个脚本需要传递参数来克隆不同的库，最终会克隆到git目录下，由于git目录下目录太深，所以做了一个链接来方便操作。
+ln -s：
+    将几个文件目录链接起来：
+        //将yulong目录链接到y目录下，他们的修改是同步的，
+        ln -s  git/10.1.11.32/SPF2.0_Int/QCOM/yulong/ ~/y
+
+ls -a:
+    列出文件下所有的文件，包括以“.“开头的隐藏文件。
+
+tips：编写的mk文件必须使用的是unix环境，比如如果存在\r,就是需要将其转换成unix编码。在UE的高级->转换中进行转换。
+    在linux编程中，注意删除行尾的空格，可以使用UltraEdit格式->删除行首/行尾空格
+    在linux环境下，尽量不要使用tab键，而应该使用空格键来缩进。
+    
+df -hl
+    查看磁盘空间使用情况
+    
+setenforce 0
+    设置SELinux成为permissive模式,临时关闭selinux.
+    关闭selinux防火墙.
+    
+在linux中新建的文件，如果要操作，则需要使用chmod 777 文件名来更改权限。
+
+移动文件操作：
+    //将/work/ZSUI_MSM8953_APK_20161109/my-setup.sh移动到/work/下
+    yu@bf-rmsz-10:~/work/ZSUI_MSM8953_APK_20161109$ mv my-setup.sh ~/work/
+    
+grep 查找指定类型的文件
+    首先运行source build/envsetup.sh配置环境
+    然后使用cgrep（查找C文件）、jgrep（查找java文件）来查找指定类型的文件
+    
+:q!
+    强制退出vim编辑器，放弃编辑处理的结果。如果确实不需要保存修改后的文件内容，可输入“:q!”命令，强行退出vim编辑器
+    
+mmm命令：使用路径名进行单独编译
+    mmm vendor/zeusis/packages/apps/FactoryTest
+    就相当于先进入vendor/zeusis/packages/app/FactoryTest后，再使用mm命令进行编译
+    
+打包镜像，刷机
+    1.打包make snod
+    例如：jiangyu@mine:~/qcCode$ make snod
+    2.将生成的system.img拷贝出来
+    3.手机进入刷机模式：adb reboot bootloader
+    4.使用fastboot将镜像刷到手机上：fastboot flash system C:\Users\jiangyu.CCDOMAIN\Desktop\system.img
+    5.运行fastboot reboot重启手机：fastboot reboot
+    
+移动文件命令：
+    mv
+
+解压zip文件：busybox unzip
+    busybox unzip system_overlayfs/app/SharedLibrary.zip -d system_overlayfs/app/
+    
+    
+        
+        
