@@ -1,3 +1,43 @@
-Mac版本
-AndroidStudio快捷键
-    1、alt + enter：错误代码快速修复
+******Window版本******
+双击某个类，按住shift+f1:打开这个类的说明文档
+强制类型转换：ctrl+shift+space
+查看方法说明：Ctrl+Q
+格式化代码：ctrl + alt + l
+Alt + Enter：提示并修复，相当于Eclipse中的ctrl + f1
+Optimize Imports（优化导入的包和类）: Ctrl + Alt + O
+函数添加注释：ctrl + alt + 0（自定义的）
+Ctrl+D： 集合了复制和粘贴两个操作，如果有选中的部分就复制选中的部分，并在选中部分的后面 粘贴出来，如果没有选中的部分，
+         就复制光标所在的行，并在此行的下面粘贴出来。
+run：shift + f10
+Ctrl+alt+Space：代码提示
+Ctrl+Shift+Space 自动补全代码
+Alt + Shift + Up/Down﻿ 不需要复制粘贴就可以上下移动行
+Ctrl + alt + K 可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序（第三方插件Lifecycle Sorter）
+alt + insert：generate快捷键
+ctrl + o：override methods
+shift + f10：运行程序
+展开所有代码：ctrl + shift + numberpad+
+收起所有代码：ctrl + shift + numberpad-
+ctrl + shift + b：调用butterknife框架（第三方）
+重构refactor
+    shift + F6
+删除某一行
+    ctrl + y
+替换
+    Ctrl + R
+    
+Ctrl + Alt + T 
+    包围代码（例如try/cache）
+
+全局搜索：
+    ctrl + shift + f
+    
+提取资源：
+    //将layout等中的字符串等资源提取到string.xml资源文件中
+    Alt + Enter
+    
+
+    
+******Mac版本******
+alt + enter：错误代码快速修复
+    
