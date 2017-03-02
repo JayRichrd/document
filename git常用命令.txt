@@ -97,3 +97,6 @@ git remote add：将本地仓库与远程仓库关联起来
     
 //只显示最近3条日志
 git log -3
+
+//将add 和 commit合并一起提交
+git commit -am "xxx"
