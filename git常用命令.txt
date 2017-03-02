@@ -87,3 +87,10 @@ git remote add：将本地仓库与远程仓库关联起来
     //创建dev分支，并切换到dev分支
     git checkout -b dev
 
+合并分支:
+    //合并指定分支dev到当前分支master，这里会提示fast-forward，说明这次合并是“快进模式”，也就是直接把master指向dev的当前提交
+    git merge dev
+    
+删除分支：
+    //删除dev分支
+    git branch -d dev
