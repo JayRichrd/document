@@ -94,3 +94,6 @@ git remote add：将本地仓库与远程仓库关联起来
 删除分支：
     //删除dev分支
     git branch -d dev
+    
+//只显示最近3条日志
+git log -3
