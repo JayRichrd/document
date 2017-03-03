@@ -84,9 +84,9 @@ git remote add：将本地仓库与远程仓库关联起来
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改
 
 创建分支：
-    git branch <NAME>
+    git branch <branch-name>
 
-创建分支：
+创建+切换分支：
     //创建dev分支，并切换到dev分支
     git checkout -b dev
 
