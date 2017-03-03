@@ -94,6 +94,10 @@ git remote add：将本地仓库与远程仓库关联起来
     //合并指定分支dev到当前分支master，这里会提示fast-forward，说明这次合并是“快进模式”，也就是直接把master指向dev的当前提交
     git merge dev
     
+git log --graph:查看分支合并图
+    //每条提交显示在一行，每次提交的commit号简略显示
+    git log --graph --pretty=oneline --abbrev-commit
+    
 删除分支：
     //删除dev分支
     git branch -d dev
