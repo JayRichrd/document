@@ -107,3 +107,7 @@ git log -3
 
 //将add 和 commit合并一起提交
 git commit -am "xxx"
+
+//不以fast-forward的形式合并分支，保留commit历史信息
+--no-ff
+    

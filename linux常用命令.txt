@@ -110,6 +110,12 @@ mmm命令：使用路径名进行单独编译
 解压zip文件：busybox unzip
     busybox unzip system_overlayfs/app/SharedLibrary.zip -d system_overlayfs/app/
     
+more命令：
+    其功能与cat类似，cat命令是整个文件的内容从上到下显示在屏幕上。more会以一页一页的显示方便使用者逐页阅读。
+而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示。按住q退出more命令
+    //more命令格式
+    more [-dlfpcsu ] [-num ] [+/ pattern] [+ linenum] [file ... ]
+    
     
         
         
