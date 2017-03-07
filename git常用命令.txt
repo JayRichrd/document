@@ -1,8 +1,9 @@
 git init 
     新建仓库
-git checkout
-    切换分支
     
+git checkout
+    切换分支 
+
 git pull
     拉取版本
     
