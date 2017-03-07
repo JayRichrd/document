@@ -123,4 +123,7 @@ git stash list
 git stash pop
     恢复stash的内容，并把stash删除
 
+git push —-force
+    强制推送到服务器
+
     
