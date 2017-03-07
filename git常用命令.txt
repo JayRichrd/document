@@ -114,4 +114,5 @@ git commit -am "xxx"
 
 //不以fast-forward的形式合并分支，保留commit历史信息
 --no-ff
+    git merge --no-ff -m "merge with no-ff" dev
     
