@@ -125,5 +125,13 @@ git stash pop
 
 git push —-force
     强制推送到服务器
+    
+开发一个新feature，最好新建一个分支，例如：
+    //新建了feature-vulcan分支
+    git checkout -b feature-vulcan
+    
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除，例如：
+    //强行删除了上面没有合并的feature-vulcan分支
+    git branch -D feature-vulcan
 
     
