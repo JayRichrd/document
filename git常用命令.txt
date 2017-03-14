@@ -164,6 +164,8 @@ git push —-force
     推送标签：
         //将本地的标签推动到服务器
         git push origin <tagname>
+        //推送全部未推送过的本地标签
+        git push origin --tags
     删除本地标签：
         git tag -d <tagname>
     删除远程标签：
