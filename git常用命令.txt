@@ -161,4 +161,11 @@ git push —-force
     git tag -a <tagname> -m "blablabla..."可以指定标签信息，例如：
         git tag -a v0.1 -m "version 0.1 released" 3628164
     命令git tag可以查看所有标签
+    推送标签：
+        //将本地的标签推动到服务器
+        git push origin <tagname>
+    删除本地标签：
+        git tag -d <tagname>
+    删除远程标签：
+        git push origin :refs/tags/<tagname>
     
