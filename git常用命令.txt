@@ -7,6 +7,15 @@ git checkout
 git pull
     拉取版本
     
+git add -f
+    强制添加文件
+    
+git check-ignore
+    检查.gitignore文件中的忽略文件配置，例如：
+        //输出的日志显示.gitignore的第3行规则忽略了该文件
+        git check-ignore -v App.class
+        .gitignore:3:*.class    App.class
+    
 git commit -m "xxxx"：将内容提交到本地版本库，并添加说明
     git commit -asm "TFS_530059:jiangyu_sys_add:for FEATURE_START_PHONE_SYSTEM_READY"
     
@@ -168,6 +177,6 @@ git push —-force
         git push origin --tags
     删除本地标签：
         git tag -d <tagname>
-    删除远程标签：
+    删除远程标签：要删除远程标签前，先删除本地标签，再使用push删除远程标签
         git push origin :refs/tags/<tagname>
     
