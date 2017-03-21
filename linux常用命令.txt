@@ -116,6 +116,10 @@ more命令：
     //more命令格式
     more [-dlfpcsu ] [-num ] [+/ pattern] [+ linenum] [file ... ]
     
+查看文件属性之状态：stat
+    //查看当前文件下的文件boot.img的状态信息
+    stat boot.img
+    
     
         
         
