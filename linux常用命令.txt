@@ -110,6 +110,17 @@ mmm命令：使用路径名进行单独编译
 解压zip文件：busybox unzip
     busybox unzip system_overlayfs/app/SharedLibrary.zip -d system_overlayfs/app/
     
+解压文件：
+    *.tar 用 tar –xvf 解压
+    *.gz 用 gzip -d或者gunzip 解压
+    *.tar.gz和*.tgz 用 tar –xzf 解压
+    *.bz2 用 bzip2 -d或者用bunzip2 解压
+    *.tar.bz2用tar –xjf 解压
+    *.Z 用 uncompress 解压
+    *.tar.Z 用tar –xZf 解压
+    *.rar 用 unrar e解压
+    *.zip 用 unzip 解压
+    
 more命令：
     其功能与cat类似，cat命令是整个文件的内容从上到下显示在屏幕上。more会以一页一页的显示方便使用者逐页阅读。
 而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示。按住q退出more命令
