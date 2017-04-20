@@ -36,6 +36,9 @@ Ctrl + Alt + T
     //将layout等中的字符串等资源提取到string.xml资源文件中
     Alt + Enter
     
+显示当前方法的调用关系：
+    Alt + F7
+    
 
     
 ******Mac版本******
