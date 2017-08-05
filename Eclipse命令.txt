@@ -1,0 +1,2 @@
+向上/下复制当前选中内容: Ctrl + Alt + Up/Down
+向上/向下整体移动选中的内容：Alt + Up/Down
