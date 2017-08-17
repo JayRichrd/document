@@ -1,2 +1,3 @@
 向上/下复制当前选中内容: Ctrl + Alt + Up/Down
 向上/向下整体移动选中的内容：Alt + Up/Down
+编辑页面编辑页之间切换的快捷键：Ctrl + Shift + F6
