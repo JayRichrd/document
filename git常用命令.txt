@@ -85,7 +85,10 @@ git reflog
     
 git checkout -- file:撤销修改
     git checkout:其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”.
-    
+    例如：
+    // 撤销本地对1.txt文件的修改
+    git checkout 1.txt
+        
 git remote add：将本地仓库与远程仓库关联起来
     //添加后，远程库的名字就是origin
     git remote add origin git@github.com:michaelliao/learngit.git
