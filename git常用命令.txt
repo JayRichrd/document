@@ -7,6 +7,11 @@ git checkout
 git pull
     拉取版本
     
+强制覆盖本地与服务器同步
+    git fetch --all
+    git reset --hard origin/[分支]
+    git pull
+    
 git add -f
     强制添加文件
     
