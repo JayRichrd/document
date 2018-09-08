@@ -48,6 +48,10 @@ grep查找文件指令：
             
 strings  libregionalization.so  | grep overlay
     在这个.so文件中查找overlay字符串
+   
+显示包含一个或几个字符的内容：
+    // 在report.txt文件中查找包含crash或者gift字符的内容，并将结果输出到result.txt中
+    cat report.txt|grep -E "crash|gift" -> ./result.txt
     
 ls -l:
     列出7个字段的文件信息：
