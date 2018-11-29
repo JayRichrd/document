@@ -225,6 +225,10 @@ top	    查看进程的资源占用情况
     例如：
     // 启动淘宝首页
     adb shell am start -W com.taobao.taobao/com.taobao.tao.welcome.Welcome
+   
+// 查看host信息
+adb shell
+cat /etc/hosts
 
 ******Mac******
 每次记得在控制台中运行source .bash_profile命令来更新配置，以便在Mac的控制台中使用adb命令
