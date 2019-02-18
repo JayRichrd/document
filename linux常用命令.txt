@@ -42,7 +42,8 @@ grep查找文件指令：
         -r：搜索某个特定的字符串，而不确定这个字符串可能会在哪个文件中出现
         -s：帮助我们将因为文件不存在或者文件不可读而打印出来的错误信息统统去除掉
             例如：
-            grep -nrs "system/vendor/overlay"
+            // 在当前目录查找内容中包含system/vendor/overlay
+            grep -nrs "system/vendor/overlay" .
             //查找首先包含了jiangyu的内容，然后再这这个基础上过滤出包含ResourceTypes.cpp的内容
             grep -nrs "jiangyu" | grep "ResourceTypes.cpp"
             
@@ -144,5 +145,9 @@ N
     
 du -sh .repo
     查看.repo目录的大小
+    
+find 查找文件
+    find /dir -name filename  在/dir目录及其子目录下面查找名字为filename的文件
+    find . -name "*.c" 在当前目录及其子目录（用“.”表示）中查找任何扩展名为“c”的文件
         
         
