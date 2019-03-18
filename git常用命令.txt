@@ -195,4 +195,8 @@ git push origin --delete [分支名]
 // 注意首先将分支的保护去掉
 git push origin --delete Android4.2.0_VAS_LuckyGift_Strike
     删除远程分支
+
+以某次commit为基础拉分支，达到回退代码的目的
+    // 以92483401abdc41bc64bbdde1a63ed7bbee403e19为准，拉一个temp的分支，这样在92483401abdc41bc64bbdde1a63ed7bbee403e19提交的代码就都没了
+    git checkout -b temp 92483401abdc41bc64bbdde1a63ed7bbee403e19
     
