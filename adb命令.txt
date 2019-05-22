@@ -230,6 +230,9 @@ top	    查看进程的资源占用情况
 adb shell
 cat /etc/hosts
 
+//查看  Dangerous Permission （以权限组形式）
+adb shell pm list permissions -d -g
+
 ******Mac******
 每次记得在控制台中运行source .bash_profile命令来更新配置，以便在Mac的控制台中使用adb命令
     
